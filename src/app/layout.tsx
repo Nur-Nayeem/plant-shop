@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
+import Image from "next/image";
 import { fredoka_one, gilroy } from "./fonts/font";
+import Navbar from "./components/Navbar";
 
 
 export const metadata: Metadata = {
@@ -19,8 +21,31 @@ export default function RootLayout({
       <body
         className={``}
       >
+        <Image
+          className="absolute top-0 left-0"
+          src="/assets/chop/top-left.png"
+          alt=""
+          width={514}
+          height={514}
+        />
+        <Image
+          className="absolute top-0 right-0 -z-10"
+          src="/assets/chop/top-right.png"
+          alt=""
+          width={682}
+          height={682}
+        />
+        <Image
+          className="absolute top-[400px] right-[700px] -z-10"
+          src="/assets/chop/bottom_hero.png"
+          alt=""
+          width={514}
+          height={514}
+        />
 
         <div className={`${gilroy.className}  max-w-[1200px] mx-auto`}>
+          <Navbar />
+
           {children}
         </div>
 
