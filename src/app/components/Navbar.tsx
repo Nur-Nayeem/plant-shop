@@ -28,7 +28,7 @@ const Navbar = () => {
                 <p className='font-bold text-2xl md:text-4xl'>Hobby</p>
             </Link >
             {/* RIGHT  */}
-            <div className={`absolute ${showBar ? 'top-24' : 'hidden'} transition-all duration-300 ease-in-out bg-[#eff9ef]/60 backdrop-blur-md py-6 sm:py-0 sm:bg-transparent w-full sm:w-fit z-10 sm:static flex flex-col sm:flex-row items-center gap-6`}>
+            <div className={`absolute ${showBar ? 'top-24' : 'hidden sm:flex'} transition-all duration-300 ease-in-out bg-[#eff9ef]/60 backdrop-blur-md py-6 sm:py-0 sm:bg-transparent w-full sm:w-fit z-10 sm:static flex flex-col sm:flex-row items-center gap-6`}>
                 <Link className='text-lg font-semibold' href={`/`}>Home</Link>
                 <Link className='text-lg font-semibold' href={`/`}>About Us</Link>
                 <Link className='text-lg font-semibold' href={`/`}>Service</Link>
