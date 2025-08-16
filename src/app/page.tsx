@@ -1,9 +1,11 @@
 import React from 'react'
-
+import HeroSection from "./components/HeroSection";
+import LandScapeServices from './components/LandScapeServices';
 const Home = () => {
   return (
-    <div className='mt-12'>
-      Home
+    <div>
+      <HeroSection />
+      <LandScapeServices />
     </div>
   )
 }

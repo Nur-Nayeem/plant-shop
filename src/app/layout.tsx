@@ -4,7 +4,6 @@ import "./globals.css";
 import Image from "next/image";
 import { fredoka_one, gilroy } from "./fonts/font";
 import Navbar from "./components/Navbar";
-import heroMiddleImg from '../../public/assets/hero-middle-plant.png'
 
 
 export const metadata: Metadata = {
@@ -37,13 +36,6 @@ export default function RootLayout({
           height={682}
         />
         <Image
-          className="absolute top-[400px] right-[700px] -z-10"
-          src="/assets/chop/bottom_hero.png"
-          alt=""
-          width={514}
-          height={514}
-        />
-        <Image
           className="absolute top-[550px] left-0 -z-10"
           src="/assets/chop/middle-left.png"
           alt=""
@@ -51,16 +43,8 @@ export default function RootLayout({
           height={514}
         />
 
-        <div className={`${gilroy.className}  max-w-[1200px] mx-auto`}>
+        <div className={`${gilroy.className}  max-w-[1200px] mx-2.5 sm:mx-auto`}>
           <Navbar />
-          <div className='absolute w-[168px] h-[188px] bg-white top-[650px] left-[700px] rounded-4xl [box-shadow:22px_34px_50px_11px_rgba(124,164,23,0.08)]'>
-            <Image
-              className='absolute -top-16 px-8'
-              src={heroMiddleImg}
-              alt='fooler tob'
-            />
-          </div>
-
           {children}
         </div>
 
