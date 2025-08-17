@@ -1,8 +1,9 @@
 import React from 'react'
 import { fredoka_one } from '../fonts/font'
 import Image from 'next/image'
-import { Star } from 'lucide-react'
 import type { StaticImageData } from 'next/image';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons"; // Import 
 
 export type cardDataType = {
     prodImg: StaticImageData,
@@ -13,6 +14,7 @@ export type cardDataType = {
 }
 
 const ProductCard = ({ prodImg, name, rating, review, price }: cardDataType) => {
+    const numbers = Array.from({ length: rating }, (_, i) => i + 1);
     return (
         <div className='max-w-[360px] border border-[rgba(0,0,0,0.36)] rounded-[37px] flex flex-col items-center py-8 px-9 gap-3.5'>
             <div className='flex justify-center items-center w-[178px] h-[234px]'>
@@ -24,13 +26,13 @@ const ProductCard = ({ prodImg, name, rating, review, price }: cardDataType) => 
             </div>
             <div className='max-w-[288px]'>
                 <h3 className={fredoka_one.className + ' font-normal text-2xl'}>{name}</h3>
-                <div className='flex gap-3 mb-5 mt-0.5'>
+                <div className='flex items-center gap-3 mb-5 mt-0.5'>
                     <div className='flex gap-0.5'>
-                        <Star />
-                        <Star />
-                        <Star />
-                        <Star />
-                        <Star />
+                        {
+                            numbers.map((num) => (
+                                <FontAwesomeIcon key={num} className='text-yellow-400' icon={faStar} />
+                            ))
+                        }
                     </div>
                     <div className='primary-text-color'>
                         <span>{rating}</span>

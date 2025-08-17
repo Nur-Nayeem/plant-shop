@@ -7,6 +7,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import FooterDecoration from "./components/FooterDecoration";
 
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: "Plant Shop",
@@ -23,34 +26,6 @@ export default function RootLayout({
       <body
         className={``}
       >
-        {/* <Image
-          className="absolute top-0 left-0"
-          src="/assets/chop/top-left.png"
-          alt=""
-          width={514}
-          height={514}
-        />
-        <Image
-          className="absolute top-0 right-0 -z-10"
-          src="/assets/chop/top-right.png"
-          alt=""
-          width={682}
-          height={682}
-        />
-        <Image
-          className="absolute top-[550px] left-0 -z-10"
-          src="/assets/chop/middle-left.png"
-          alt=""
-          width={514}
-          height={514}
-        /> */}
-        {/* BG of professional gardenar SPOTS  */}
-
-
-        {/* BG spot proffessional services  */}
-
-
-
         <div className={`${gilroy.className}  max-w-[1200px] mx-2.5 sm:mx-auto`}>
           <Navbar />
           {children}
