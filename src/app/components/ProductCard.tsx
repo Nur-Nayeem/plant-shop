@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Star } from 'lucide-react'
 
 export type cardDataType = {
-    prodImg: any,
+    prodImg: string,
     name: string,
     rating: number,
     review: number,
