@@ -2,8 +2,8 @@ import React from 'react'
 
 import Image from 'next/image'
 import { fredoka_one } from '../fonts/font'
-
-const ServiceCard = ({ img, stl, header }: { img: string, stl: string, header: string }) => {
+import type { StaticImageData } from 'next/image';
+const ServiceCard = ({ img, stl, header }: { img: StaticImageData, stl: string, header: string }) => {
     return (
         <div style={{
             boxShadow: '14px 15px 62px 0px rgba(12, 169, 65, 0.12)',

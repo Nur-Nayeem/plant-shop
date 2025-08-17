@@ -2,9 +2,10 @@ import React from 'react'
 import { fredoka_one } from '../fonts/font'
 import Image from 'next/image'
 import { Star } from 'lucide-react'
+import type { StaticImageData } from 'next/image';
 
 export type cardDataType = {
-    prodImg: string,
+    prodImg: StaticImageData,
     name: string,
     rating: number,
     review: number,
