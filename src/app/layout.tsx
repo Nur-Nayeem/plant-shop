@@ -4,6 +4,8 @@ import "./globals.css";
 import Image from "next/image";
 import { fredoka_one, gilroy } from "./fonts/font";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import FooterDecoration from "./components/FooterDecoration";
 
 
 export const metadata: Metadata = {
@@ -52,6 +54,8 @@ export default function RootLayout({
         <div className={`${gilroy.className}  max-w-[1200px] mx-2.5 sm:mx-auto`}>
           <Navbar />
           {children}
+          <Footer />
+          <FooterDecoration />
         </div>
 
       </body>
