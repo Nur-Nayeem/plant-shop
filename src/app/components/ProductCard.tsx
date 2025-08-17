@@ -22,7 +22,7 @@ const ProductCard = ({ prodImg, name, rating, review, price }: cardDataType) => 
                     alt='product 1'
                 />
             </div>
-            <div className='w-[288px]'>
+            <div className='max-w-[288px]'>
                 <h3 className={fredoka_one.className + ' font-normal text-2xl'}>{name}</h3>
                 <div className='flex gap-3 mb-5 mt-0.5'>
                     <div className='flex gap-0.5'>

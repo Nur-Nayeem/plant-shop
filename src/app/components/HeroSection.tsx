@@ -31,7 +31,7 @@ const HeroSection = () => {
                     alt='Hero of the Plant shop'
                     className='w-full h-full'
                 />
-                <div className='absolute bottom-0 -left-36 w-[514px] h-[514px] bg-[rgba(83,195,81,0.33)] blur-[168px] -z-20'></div>
+                <div className='absolute bottom-0 left-0 md:-left-36 max-w-[514px] max-h-[514px] bg-[rgba(83,195,81,0.33)] blur-[168px] -z-20'></div>
 
             </div>
 

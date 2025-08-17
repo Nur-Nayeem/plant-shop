@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={``}
       >
-        <Image
+        {/* <Image
           className="absolute top-0 left-0"
           src="/assets/chop/top-left.png"
           alt=""
@@ -43,7 +43,7 @@ export default function RootLayout({
           alt=""
           width={514}
           height={514}
-        />
+        /> */}
         {/* BG of professional gardenar SPOTS  */}
 
 

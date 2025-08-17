@@ -4,11 +4,7 @@ import { fredoka_one } from '../fonts/font'
 import img1 from '../../../public/assets/card-img/img-1.png'
 import img2 from '../../../public/assets/card-img/img-2.png'
 import img3 from '../../../public/assets/card-img/img-3.png'
-import spot3 from '../../../public/assets/card-img/spot3.png'
-import spot1 from '../../../public/assets/card-img/spot1.png'
-import spot2 from '../../../public/assets/card-img/spot2.png'
 import ServiceCard from './ServiceCard'
-import Image from 'next/image'
 const ProfessionalServiceSection = () => {
 
     return (
@@ -28,36 +24,14 @@ const ProfessionalServiceSection = () => {
 
             </div>
             {/* RIGHT  */}
-            <div className='relative md:w-7/12 flex items-center gap-7'>
+            <div className='relative md:w-7/12 flex items-center gap-3 md:gap-7'>
                 <div className='z-20'>
                     <ServiceCard img={img1} stl="" header='Plant Trees' />
                 </div>
-                <div className='flex flex-col gap-7 z-20'>
+                <div className='flex flex-col gap-3 md:gap-7 z-20'>
                     <ServiceCard img={img2} stl="" header='Pruning plants' />
                     <ServiceCard img={img3} stl="" header='Plant Trees' />
 
-                </div>
-
-                <Image
-                    className='absolute z-10 w-24 h-20 top-[20%] left-[40%]'
-                    src={spot3}
-                    alt="spot"
-                />
-                <Image
-                    className='absolute z-10 w-24 h-20 top-[65%] left-[35%]'
-                    src={spot1}
-                    alt="spot"
-                />
-                <Image
-                    className='absolute z-10 w-24 h-20 top-[45%] right-[5%]'
-                    src={spot2}
-                    alt="spot"
-                />
-                <div className='absolute w-[327px] h-[325px] rounded-full bg-[rgba(255,233,120,0.33)] blur-3xl top-[10%] left-[10%]'>
-                </div>
-                <div className='absolute w-[328px] h-[328px] rounded-full bg-[rgba(83,195,81,0.33)] blur-3xl top-[20%] right-0 md:-right-[10%]'>
-                </div>
-                <div className='absolute w-[328px] h-[328px] rounded-full bg-[rgba(83,195,81,0.33)] blur-3xl bottom-[10%] left-[10%]'>
                 </div>
 
             </div>
