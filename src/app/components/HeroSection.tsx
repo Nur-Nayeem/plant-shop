@@ -31,13 +31,8 @@ const HeroSection = () => {
                     alt='Hero of the Plant shop'
                     className='w-full h-full'
                 />
-                <Image
-                    className="absolute top-[250px] right-[350px] -z-10"
-                    src="/assets/chop/bottom_hero.png"
-                    alt=""
-                    width={514}
-                    height={514}
-                />
+                <div className='absolute bottom-0 -left-36 w-[514px] h-[514px] bg-[rgba(83,195,81,0.33)] blur-[168px] -z-20'></div>
+
             </div>
 
             <div className='hidden xl:block absolute w-[168px] h-[188px] bg-white top-[500px] left-[400px] rounded-4xl [box-shadow:22px_34px_50px_11px_rgba(124,164,23,0.08)]'>

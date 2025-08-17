@@ -42,6 +42,12 @@ export default function RootLayout({
           width={514}
           height={514}
         />
+        {/* BG of professional gardenar SPOTS  */}
+
+
+        {/* BG spot proffessional services  */}
+
+
 
         <div className={`${gilroy.className}  max-w-[1200px] mx-2.5 sm:mx-auto`}>
           <Navbar />
