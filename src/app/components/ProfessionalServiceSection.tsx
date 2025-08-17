@@ -8,7 +8,7 @@ import ServiceCard from './ServiceCard'
 const ProfessionalServiceSection = () => {
 
     return (
-        <div className='flex items-center gap-24 my-24 flex-col md:flex-row'>
+        <div className='flex items-center justify-between mx-auto gap-24 my-24 flex-col md:flex-row'>
             {/* LEFT  */}
             <div className='md:w-5/12'>
                 <h3 className={fredoka_one.className + ' font-normal text-4xl'}>Professional Service</h3>
@@ -24,7 +24,7 @@ const ProfessionalServiceSection = () => {
 
             </div>
             {/* RIGHT  */}
-            <div className='relative md:w-7/12 flex items-center gap-3 md:gap-7'>
+            <div className='relative md:w-7/12 flex items-center md:justify-end gap-3 md:gap-7'>
                 <div className='z-20'>
                     <ServiceCard img={img1} stl="" header='Plant Trees' />
                 </div>

@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={``}
       >
-        <div className={`${gilroy.className}  max-w-[1200px] mx-2.5 sm:mx-auto`}>
+        <div className={`${gilroy.className}  container px-2.5 sm:px-0 mx-auto`}>
           <Navbar />
           {children}
           <Footer />

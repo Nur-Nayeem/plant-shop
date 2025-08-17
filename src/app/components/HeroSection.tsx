@@ -25,13 +25,12 @@ const HeroSection = () => {
             </div>
 
             {/* HERO RIGHT  */}
-            <div className='relative md:w-6/12 xl:-right-40'>
+            <div className='md:w-6/12'>
                 <Image
                     src={heroImg}
                     alt='Hero of the Plant shop'
                     className='w-full h-full'
                 />
-                <div className='absolute bottom-0 left-0 md:-left-36 max-w-[514px] max-h-[514px] bg-[rgba(83,195,81,0.33)] blur-[168px] -z-20'></div>
 
             </div>
 

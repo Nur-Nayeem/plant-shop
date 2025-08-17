@@ -16,7 +16,7 @@ export type cardDataType = {
 const ProductCard = ({ prodImg, name, rating, review, price }: cardDataType) => {
     const numbers = Array.from({ length: rating }, (_, i) => i + 1);
     return (
-        <div className='w-[90vw] md:w-[360px] border border-[rgba(0,0,0,0.36)] rounded-[37px] flex flex-col items-center py-8 px-9 gap-3.5'>
+        <div className='w-[calc(90vw-20px)] md:w-[360px] border border-[rgba(0,0,0,0.36)] rounded-[37px] flex flex-col items-center py-8 px-9 gap-3.5'>
             <div className='flex justify-center items-center w-[178px] h-[234px]'>
                 <Image
                     className='w-full h-full'
