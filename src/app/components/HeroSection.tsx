@@ -34,7 +34,7 @@ const HeroSection = () => {
 
             </div>
 
-            <div className='hidden xl:block absolute w-[168px] h-[188px] bg-white top-[500px] left-[400px] rounded-4xl [box-shadow:22px_34px_50px_11px_rgba(124,164,23,0.08)]'>
+            <div className='hidden xl:block absolute w-[168px] h-[188px] bg-white bottom-0 left-[40%] rounded-4xl [box-shadow:22px_34px_50px_11px_rgba(124,164,23,0.08)]'>
                 <Image
                     className='absolute -top-16 px-8'
                     src={heroMiddleImg}

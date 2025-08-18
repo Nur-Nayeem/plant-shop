@@ -34,7 +34,7 @@ const Products = () => {
         <div className='my-24'>
             <h3 className={fredoka_one.className + ' font-normal text-4xl text-center'}>Choose your Dream Plant</h3>
             <p className='font-medium text-lg mt-8 mb-14 primary-text-color text-center'>Many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,</p>
-            <div className='flex items-center justify-between flex-col gap-9 sm:flex-row sm:flex-wrap'>
+            <div className='flex items-center justify-center flex-col gap-9 sm:flex-row sm:flex-wrap'>
                 {
                     productsData.map((item, index) => <ProductCard key={index} prodImg={item.prodImg} name={item.name} rating={item.rating} review={item.review} price={item.price} />)
                 }

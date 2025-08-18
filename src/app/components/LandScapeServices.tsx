@@ -6,7 +6,7 @@ import landScapeImg from '../../../public/assets/plant_decoration-left.png'
 const LandScapeServices = () => {
     return (
         <div className='relative bg-white md:pl-36 flex flex-col md:flex-row items-center justify-between gap-16 my-24 py-12 rounded-[28px] [box-shadow:23px_19px_138px_-45px_rgba(12,169,65,0.13)]'>
-            <div className='relative md:absolute md:-left-24 md:-bottom-7 max-w-[288px] max-h-[350px]'>
+            <div className='relative md:absolute md:-left-24 md:bottom-0 max-w-[288px] max-h-[350px]'>
                 <Image
                     className='w-full'
                     src={landScapeImg}
